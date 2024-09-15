@@ -1,0 +1,155 @@
+/* Estilo general del cuerpo de la página */
+body {
+  background-image: url('/static/imagenes/hotel-background.jpg'); /* Ruta relativa para la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-position: center; /* Centrar la imagen de fondo */
+  margin: 0; /* Eliminar márgenes para asegurar que el fondo cubra toda la pantalla */
+  font-family: 'Arial', sans-serif; /* Fuente básica para mejorar la legibilidad */
+  box-sizing: border-box; /* Asegurar que el modelo de caja sea consistente */
+}
+
+/* Estilo del encabezado */
+header {
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.8); /* Fondo claro con algo de transparencia */
+  color: #333; /* Color de texto oscuro */
+  padding: 15px 0; /* Reducir padding para hacer el encabezado más pequeño */
+  width: 100%; /* Asegurar que el encabezado cubra el ancho completo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra para mayor profundidad */
+}
+
+/* Estilo del título del encabezado */
+header h1 {
+  margin: 0;
+  font-size: 2rem; /* Tamaño de la fuente del título reducido */
+  font-weight: 600; /* Fuente ligeramente más gruesa */
+}
+
+/* Estilo principal del contenido */
+main {
+  width: 90%; /* Ajustar el ancho del contenido principal para mejorar la visibilidad */
+  max-width: 500px; /* Reducir el ancho máximo */
+  padding: 25px;
+  border-radius: 10px; /* Bordes más redondeados */
+  text-align: center; /* Centrar texto en el contenido principal */
+  margin: 30px auto; /* Centrar el contenido principal en la página */
+  box-sizing: border-box; /* Asegurar que el modelo de caja sea consistente */
+}
+
+/* Estilo del pie de página */
+footer {
+  text-align: center;
+  background-color: #00ced1; /* Fondo turquesa */
+  color: white; /* Color del texto del pie de página */
+  padding: 15px 0;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+}
+
+/* Enlaces en el pie de página */
+.footer-link {
+  color: white; /* Color del enlace */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Subrayar el enlace al pasar el ratón */
+}
+
+/* Estilo para los párrafos */
+p {
+  font-size: 1rem; /* Tamaño de la fuente */
+  line-height: 1.6; /* Altura de línea para legibilidad */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo para el formulario */
+.form-container {
+  max-width: 400px; /* Ancho máximo del contenedor del formulario */
+  margin: 30px auto;
+  padding: 25px; /* Aumentar padding para mayor espacio interno */
+  background: transparent; /* Fondo transparente para ver la imagen de fondo */
+  border: none; /* Eliminar el borde */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para mayor profundidad */
+  backdrop-filter: blur(10px); /* Añadir un efecto de desenfoque de fondo */
+}
+
+/* Estilo del título del formulario */
+.title {
+  font-size: 1.75rem; /* Tamaño de fuente más grande */
+  font-weight: 600; /* Fuente más gruesa */
+  margin-bottom: 20px;
+  color: #00ced1; /* Color del título del formulario */
+}
+
+/* Estilo de las etiquetas */
+.label {
+  display: block;
+  margin-bottom: 10px; /* Aumentar margen inferior */
+  font-weight: 500; /* Fuente semi-gruesa */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo de los campos de entrada */
+.input-field, .textarea-field {
+  width: calc(100% - 20px); /* Ajustar el ancho de los campos */
+  padding: 12px; /* Aumentar padding para comodidad */
+  border: 1px solid #ddd; /* Borde suave */
+  border-radius: 8px; /* Bordes más redondeados */
+  margin-bottom: 20px; /* Mayor margen inferior */
+  font-size: 1rem; /* Tamaño de fuente más grande */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interior para más profundidad */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.input-field:focus, .textarea-field:focus {
+  border-color: #00ced1; /* Color de borde al enfocar */
+  box-shadow: 0 0 5px rgba(0, 206, 209, 0.3); /* Efecto de enfoque con sombra */
+  outline: none; /* Eliminar el borde de enfoque predeterminado */
+}
+
+/* Estilo específico para los campos de texto */
+.textarea-field {
+  height: 80px; /* Ajustar altura de los campos de texto a un tamaño menor */
+}
+
+/* Estilo del botón de envío */
+.submit-button {
+  background-color: #00ced1; /* Fondo turquesa */
+  color: white;
+  padding: 12px 30px; /* Aumentar el padding */
+  border: none;
+  border-radius: 8px; /* Bordes más redondeados */
+  cursor: pointer;
+  font-size: 1.1rem; /* Tamaño de fuente más grande */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición más suave */
+}
+
+.submit-button:hover {
+  background-color: #00b2a2; /* Color más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  main {
+    width: 90%; /* Ajustar el ancho aún más para pantallas muy pequeñas */
+    padding: 20px;
+  }
+  
+  .form-container {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .input-field, .textarea-field {
+    width: 100%; /* Ancho completo en dispositivos móviles */
+  }
+  
+  .submit-button {
+    width: 100%; /* Ancho completo en dispositivos móviles */
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Formulario{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <!-- Agregar Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="my-4">Bienvenido a Hotel Estelar</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'formulario' %}">Formulario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'gracias' %}">Gracias</a></li>
+                    <!-- Agrega más enlaces según sea necesario -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer class="text-center mt-4 py-3">
+        <p>&copy; 2024 Hotel Estelar</p>
+    </footer>
+    <!-- Agregar jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Agregar tu archivo JavaScript -->
+    <script src="{% static 'form-validation.js' %}"></script>
+</body>
+</html>
