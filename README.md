@@ -14,7 +14,7 @@ Django app que reemplaza **formularios en papel** por una experiencia **moderna 
 ✅ **Página de agradecimiento animada** – mejora la percepción de marca  
 
 ## Stack
-`Python 3.11` `Django 5` `SQLite`  `Bootstrap 5` (CDN)
+`Python 3.11` `Django 5` `SQLite` `Bootstrap 5` (CDN)
 
 ## Instalación local
 ```bash
@@ -23,4 +23,3 @@ cd hotel
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
-
