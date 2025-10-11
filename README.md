@@ -1,27 +1,26 @@
-# Hotel Estelar - Encuesta de Satisfacción
+# Encuesta de Satisfacción – Hotel 🏨⭐
 
-## Descripción del Proyecto
+Django app que reemplaza **formularios en papel** por una experiencia **moderna y rápida** en cualquier dispositivo.
 
-Este proyecto es una aplicación de encuesta de satisfacción creada como práctica utilizando Django, HTML, CSS, JavaScript y SQLite. La aplicación permite a los usuarios proporcionar su opinión sobre su experiencia en el hotel, y se utiliza para recopilar comentarios y puntuaciones para mejorar los servicios del hotel.
+## Demo en 15 segundos
+![Formulario vacío](screenshots/screenshot_form.png)
+![Selección de estrellas](screenshots/screenshot_stars.png)
+![Página de gracias](screenshots/screenshot_thanks.png)
 
-## Tecnologías Utilizadas
+## Características
+✅ **Diseño responsive** – se ve bien en móvil y escritorio  
+✅ **Sistema de estrellas interactivo** – sin JavaScript externo  
+✅ **Guardado instantáneo** – datos almacenados en SQLite  
+✅ **Página de agradecimiento animada** – mejora la percepción de marca  
 
-- **Django**: Framework de desarrollo web en Python.
-- **HTML**: Lenguaje de marcado para la estructura del contenido web.
-- **CSS**: Lenguaje de estilos para diseñar y maquetar la aplicación.
-- **JavaScript**: Lenguaje de programación para funcionalidades interactivas.
-- **SQLite**: Base de datos ligera utilizada para almacenar datos de la encuesta.
+## Stack
+`Python 3.11` `Django 5` `SQLite`  `Bootstrap 5` (CDN)
 
-## Funcionalidades
-
-- **Formulario de Encuesta**: Permite a los usuarios ingresar su nombre, correo electrónico, puntuación y comentarios.
-- **Validación de Datos**: Asegura que los datos ingresados sean correctos y completos.
-- **Interfaz de Usuario**: Diseñada para ser intuitiva y atractiva, con un diseño responsive para adaptarse a diferentes dispositivos.
-
-## Instalación y Configuración
-
-1. **Clona el Repositorio**:
-
-   ```bash
-   git clone https://github.com/balvin07/hotel-estelar.git
+## Instalación local
+```bash
+git clone https://github.com/balvin07/hotel.git
+cd hotel
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
 
